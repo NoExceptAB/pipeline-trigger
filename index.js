@@ -94,7 +94,7 @@ async function run() {
             // core.setFailed("Failed to dispatch workflow.");
         }
     } catch (error) {
-        console.error("An error occurred:", error);
+        console.error("Some error occurred:", error);
         // core.setFailed(error.message);
     }
 }
