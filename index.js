@@ -85,7 +85,7 @@ async function run() {
             } else {
                 message = `❌❌❌ The workflow ends execution. Status: ${status}. Conclusion: ${conclusion}. ❌❌❌ See more details here: ${url}`;
             }
-            await createComment(octokit, context, message);
+            // await createComment(octokit, context, message);
             console.log(`[Cross Repository Pipeline Trigger] 🚀: ${message}`);
             core.setOutput('message', message);
         } else {
