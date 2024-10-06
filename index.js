@@ -55,19 +55,19 @@ async function waitForWorkflowCompletion(octokit, owner, repo) {
     }
 }
 
-async function createComment(octokit, context, message) {
-    try {
-        await octokit.rest.issues.createComment({
-            issue_number: context.issue.number,
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            body: message
-        });
-    } catch (error) {
-        console.error("Error creating comment:", error);
-        throw error;
-    }
-}
+// async function createComment(octokit, context, message) {
+//     try {
+//         // await octokit.rest.issues.createComment({
+//         //     issue_number: context.issue.number,
+//         //     owner: context.repo.owner,
+//         //     repo: context.repo.repo,
+//         //     body: message
+//         // });
+//     } catch (error) {
+//         console.error("Error creating comment:", error);
+//         throw error;
+//     }
+// }
 
 async function run() {
     try {
