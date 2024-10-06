@@ -79,7 +79,7 @@ async function run() {
         const context = github.context;
         let message = "";
         if (await dispatchWorkflow(octokit, owner, repo, context)) {
-            console.log("✅ Workflow dispatch initiated successfully.");
+            console.log("✅ Workflow dispatch initiated [successfully].");
             const { status, conclusion, url } = await waitForWorkflowCompletion(octokit, owner, repo, context);
             if (conclusion == "success" && status == "completed") {
                 message = `✅✅✅ The workflow ends execution. Status: ${status}. Conclusion: ${conclusion}. ✅✅✅ See more details here: ${url}`;

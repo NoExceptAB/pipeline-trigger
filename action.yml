@@ -1,4 +1,4 @@
-name: "cross-repo-pipeline-trigger"
+name: "cross-repo-pipeline-trigger1"
 description: "Triggers a workflow in another repository and posts results in the pull request comments"
 inputs:
   pat-token:
