@@ -87,14 +87,14 @@ async function run() {
             }
             // await createComment(octokit, context, message);
             console.log(`[Cross Repository Pipeline Trigger] 🚀: ${message}`);
-            core.setOutput('message', message);
+            // core.setOutput('message', message);
         } else {
             console.error("Failed to dispatch workflow.");
-            core.setFailed("Failed to dispatch workflow.");
+            // core.setFailed("Failed to dispatch workflow.");
         }
     } catch (error) {
         console.error("An error occurred:", error);
-        core.setFailed(error.message);
+        // core.setFailed(error.message);
     }
 }
 
