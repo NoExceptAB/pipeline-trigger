@@ -71,6 +71,7 @@ async function waitForWorkflowCompletion(octokit, owner, repo) {
 
 async function run() {
     try {
+        console.log("!!!! This is my code !!!!");
         const token = core.getInput('pat-token', { required: true });
         const owner = core.getInput('owner', { required: true });
         const repo = core.getInput('repo', { required: true });
